@@ -7,8 +7,8 @@ public static void main(String[] args) {
 
     System.out.println("Hello World, I'am FAR");
     System.out.println("Sudarat Raprit");
-    System.out.println("Information system");
-    System.out.println("IS: RMUTSV");
+    System.out.println("Information system,IS:RMUTSV");
+
 
 
 
