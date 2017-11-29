@@ -12,6 +12,13 @@ public class CalGrade {
     public static void main (String[] args){
         Scanner scanner = new Scanner(System.in);
         int score;
+        int count =0;
+
+
+
+
+
+        int score;
         System.out.println("Enter your score: ");
         score = scanner.nextInt();
 //          test condition score
@@ -19,7 +26,7 @@ public class CalGrade {
         else if (score <59) System.out.println("Your grade is D");
         else if (score <69) System.out.println("Your grade is C");
         else if (score <79) System.out.println("Your grade is B");
-            else System.out.println("Your grade is A");
+        else System.out.println("Your grade is A");
 
     }//main
 }//class
