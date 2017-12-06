@@ -13,20 +13,25 @@ public class CalGrade {
         Scanner scanner = new Scanner(System.in);
         int score;
         int count =0;
-
-
-
-
-
-        int score;
-        System.out.println("Enter your score: ");
+        for (int i=1;i<=3;i++)
+            System.out.print("Enter your score (0-100): ");
         score = scanner.nextInt();
-//          test condition score
-        if (score < 49) System.out.println("Your grade is F");
-        else if (score <59) System.out.println("Your grade is D");
-        else if (score <69) System.out.println("Your grade is C");
-        else if (score <79) System.out.println("Your grade is B");
-        else System.out.println("Your grade is A");
+        if (score < 0 || score > 100) {
+            count++;
+            if (count == 3) {
+                System.out.print("System Error.");
+                //break;
+            }
+        }
+        else{
+            if (score < 50) System.out.print("Your grade is F");
+            else if (score <= 59) System.out.print("Your grade is D");
+            else if (score <= 69) System.out.print("Your grade is C");
+            else if (score <= 79) System.out.print("Your grade is B");
+            else System.out.print("Your grade is A");
 
-    }//main
-}//class
+            // break;
+        }
+    }
+
+}
