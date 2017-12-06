@@ -26,7 +26,7 @@ public class TestWhileLoop {
             input = scanner.nextInt();
             count++;
             if (input ==pin){
-                System.out.print("Enter your is correctect. ");
+                System.out.print("Enter your is correctect. ");break;
             }
             if (count ==3){
                 System.out.print("System error.");break;
