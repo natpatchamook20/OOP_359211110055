@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class sortingArray {
 
-    private static final int MAX = 10;
+    private static final int MAX =10;
     private static int number[]=new int [MAX];
     public static void main(String[] args) {
         inputData(number,number.length);
@@ -16,25 +16,29 @@ public class sortingArray {
         findMaxData(number);
         findMinData(number);
         System.out.println("Before sorting: ");
-        //ascending order
+//ascending order
         SortingDataAscending(number);
 
-        // sortingDataDesending(number);
+// sortingDataDesending(number);
 
-    }//main
+}//main
 
     private static void sortingDataDesending(int[] number) {
         System.out.println("Desending roder: ");
-        Integer[] num = {1,8,6,3};
+        Integer[] num = new Integer[number.length];
+        int i =0;
+        for(int val:number){
+            num[i++] = val;
+        }
         Arrays.sort(num, Collections.reverseOrder());
         showData(number,number.length);
-    }//sortingDataDesending
+}//sortingDataDesending
 
     private static void SortingDataAscending (int[] number) {
         System.out.println("Ascending roder: ");
         Arrays.sort(number);
         showData(number,number.length);
-    }//SortingDataAscending
+}//SortingDataAscending
 
     private static void findMinData(int[] number) {
     }
@@ -46,7 +50,7 @@ public class sortingArray {
                 min = number[i];
         }//for
         System.out.println("The minimum data: " + min);
-    }//findMaxData
+}//findMaxData
 
     private static void showData(int[] number, int length) {
         System.out.println("Data in array: ");
@@ -64,5 +68,5 @@ public class sortingArray {
             System.out.print("Enter an integer["+i+"]: ");
             number[i] = scanner.nextInt();
         }
-    }//inputData
+}//inputData
 }
