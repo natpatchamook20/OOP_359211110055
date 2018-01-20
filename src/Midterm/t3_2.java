@@ -1,7 +1,7 @@
 package Midterm;
 import java.util.Scanner;
 public class t3_2 {
-    public static Scanner sc = new Scanner (System.in);
+    private static Scanner sc = new Scanner (System.in);
     public static void main(String[] args) {
         int total = 0, vat = 0;
         String id = getID();
@@ -25,25 +25,25 @@ public class t3_2 {
         else
             System.out.println("Your Pay Price Vat : "+ total/1);
     }
-    public static String getID(){
+    private static String getID(){
         String id;
         System.out.print("Enter ID : ");
         id = sc.nextLine();
         return id;
     }
-    public static String getName(){
+    private static String getName(){
         String name;
         System.out.print("Enter Name : ");
         name = sc.nextLine();
         return name;
     }
-    public static int getSalary(){
+    private static int getSalary(){
         int salary;
         System.out.print("Enter Salary : ");
         salary = sc.nextInt();
         return salary;
     }
-    public static int getOverTime(){
+    private static int getOverTime(){
         int overtime;
         System.out.print("Enter OverTime : ");
         overtime = sc.nextInt();
